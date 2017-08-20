@@ -1,21 +1,31 @@
 <meta charset="utf-8">
 <style>
-  .section-title {
+  .tle {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.25rem;
     font-weight: normal;
     max-width: 36rem;
     box-sizing: border-box;
-    padding: 0.5rem 2rem;
+    padding: 1.5rem 2rem;
+    margin: 1rem auto;
+    background: rgba(183, 246, 97, 0.25);
+  }
+  .tle a {
+    text-decoration: none;
+  }
+  @media (max-width: 576px) {
+    .tle {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  .section-title {
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
     background: rgba(183, 246, 97, 0.5);
   }
   .topic {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    max-width: 36rem;
-    box-sizing: border-box;
-    padding: 1.5rem 2rem;
-    margin: 1rem 0;
-    background: rgba(183, 246, 97, 0.25);
   }
   .section-title + .topic {
     margin-top: 0;
@@ -87,16 +97,7 @@
     margin-top: 0;
   }
   .info {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    max-width: 36rem;
-    box-sizing: border-box;
-    padding: 1.5rem 2rem;
-    margin: 1rem 0;
-  }
-  .topic a,
-  .info a,
-  .intro a {
-    text-decoration: none;
+    background: none;
   }
   .info > ul {
     list-style: none;
@@ -131,11 +132,7 @@
     max-width: 100%;
   }
   .intro {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    max-width: 36rem;
-    box-sizing: border-box;
-    padding: 1.5rem 2rem;
-    margin: 1rem 0;
+    background: none;
   }
   .intro > .slogan {
     font-size: 1.75rem;
@@ -151,17 +148,8 @@
     padding: 0;
     line-height: 1.5;
   }
-  @media (max-width: 576px) {
-    .section-title,
-    .topic,
-    .info,
-    .intro {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  }
 </style>
-<div class="intro">
+<div class="tle intro">
   <p class="slogan">台港兩地共 9 個哲普團體參與，<br>台灣最大哲學普及社群盛事，<br>就在 9 月 17 日「沃草公民學院年會」。</p>
   <label>本活動包含</label>
   <ul>
@@ -171,9 +159,8 @@
 	<li>四、由烙哲學社群的朱家安、陳煥民（小龜）帶來的兩場前導演講</li>
   </ul>
 </div>
-
-<h1 class="section-title">前導演講</h1>
-<div class="topic">
+<h1 class="tle section-title">前導演講</h1>
+<div class="tle topic">
   <div class="talk">
     <h3><span>一、倫理學與哲學普及</span></h3>
     <p class="time">9/1（五）19:00 - 21:00</p>
@@ -191,7 +178,7 @@
     </div>
   </div>
 </div>
-<div class="topic">
+<div class="tle topic">
   <div class="talk">
     <h3><span>二、我如何進行哲學普及？</span></h3>
     <p class="time">9/8（五）19:00 - 21:00</p>
@@ -209,9 +196,8 @@
     </div>
   </div>
 </div>
-
-<h1 class="section-title">年會資訊</h1>
-<div class="info">
+<h1 class="tle section-title">年會資訊</h1>
+<div class="tle info">
   <ul>
     <li><label>時間</label><span>2017/9/17（日）10:00 - 18:00</span></li>
     <li><label>地點</label>華山文創 2 樓「拱廳」</li>
@@ -223,9 +209,8 @@
   <label>地圖</label>
   <div class="map"><img src="https://accupassv3storage.blob.core.windows.net/userupload/aa688c3b93d74486a812dc8798b27afa.jpg"></div>
 </div>
-
-<h1 class="section-title">年會議程</h1>
-<div class="topic">
+<h1 class="tle section-title">年會議程</h1>
+<div class="tle topic">
   <h2>主題一、後設</h2>
   <div class="talk">
     <h3><span>講題一：論證圖與思辨</span></h3>
@@ -275,7 +260,7 @@
     </div>
   </div>
 </div>
-<div class="topic">
+<div class="tle topic">
   <h2>主題二、樂透</h2>
   <div class="talk">
     <h3><span>講題四：知識運氣</span></h3>
@@ -324,7 +309,7 @@
     </div>
   </div>
 </div>
-<div class="topic">
+<div class="tle topic">
   <h2>主題三、自主</h2>
   <div class="talk">
     <h3><span>講題七：道德相對主義</span></h3>
